@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "broken-shop"
+version = "0.1.0"
+description = "An intentionally vulnerable web shop for learning web security (local lab only)"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Jabir Hassan", email = "jabirhassan9907@gmail.com" }]
+keywords = ["security", "web", "learning", "ctf", "sqli", "xss", "csrf", "lab"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Education",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Security",
+    "Topic :: Education",
+]
+
+[project.scripts]
+brokenshop = "brokenshop.app:main"
+
+[project.urls]
+Homepage = "https://github.com/Jabir-89/broken-shop"
+Issues = "https://github.com/Jabir-89/broken-shop/issues"
+
+[tool.setuptools]
+packages = ["brokenshop"]

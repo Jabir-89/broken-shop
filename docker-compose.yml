@@ -1,0 +1,7 @@
+# Local-only by design: the port is bound to 127.0.0.1, never 0.0.0.0.
+services:
+  broken-shop:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    restart: unless-stopped
